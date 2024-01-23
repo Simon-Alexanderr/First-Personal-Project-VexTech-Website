@@ -1,0 +1,173 @@
+.main-container{
+    padding: 30px;
+    background-color: black;
+}
+.nav-bar{
+    border-radius: 20px;
+}
+.nav-bar a:hover{
+  color: aqua;
+}
+.nav{
+text-decoration: none;
+color: gray;
+}
+.benefits{
+    background: gainsboro;
+}
+.gallery-image {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+.gallery-image img {
+    height: 250px;
+    width: 400px;
+    transform: scale(1.0);
+    transition: transform 0.4s ease;
+  } 
+.caption {
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    bottom: 5px;
+    left: 20px;
+    opacity: 0.0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }  
+.transparent-box {
+    position: absolute;
+    top: 0;
+    left: -12px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  } 
+  .img-box {
+    box-sizing: content-box;
+    margin: 10px;
+    height: 250px;
+    width: 300px;
+    overflow: hidden;
+    display: inline-block;
+    color: white;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+  }
+.img-box:hover img { 
+    transform: scale(1.07);
+    overflow: hidden;
+
+  }
+  
+.img-box:hover .transparent-box {
+    background-color:rgba(0, 0, 0, 0.5);
+  }
+.img-box:hover .caption {
+    transform: translateY(-20px);
+    opacity: 1.0;
+  }
+  
+.caption > p:nth-child(2) {
+    font-size: 0.8em;
+  }
+  
+  .opacity-low {
+    opacity: 0.5;
+  }
+.newsletter h1{
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+color: white;
+}
+.newsletter p{
+  color: white;
+}
+.newsletter button{
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#newsletter-form {
+    max-width: 400px;
+    margin: 0;
+}
+.reviews{
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+
+@media screen and (max-width: 768px) {
+  .headline {
+      flex-direction: column;
+  }
+
+  .headline-img-split,
+  .headline-content-split {
+      width: 100%;
+  }
+
+  /* Add more responsive styles as needed */
+}
+
+/* Additional responsive styles for the benefits section */
+@media screen and (max-width: 768px) {
+  .benefits .row {
+      flex-direction: column;
+  }
+
+  .benefits .col-3 {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+}
+
+/* Additional responsive styles for the highlighted-products section */
+@media screen and (max-width: 768px) {
+  .highlighted-products .col-4 {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+}
+
+/* Additional responsive styles for the customer-reviews section */
+@media screen and (max-width: 768px) {
+  #customer-reviews .carousel-inner {
+      height: auto;
+  }
+
+  #customer-reviews .reviews.card {
+      width: 100%;
+  }
+}
+
+/* Additional responsive styles for the social media posts section */
+@media screen and (max-width: 768px) {
+  .carousel-inner .carousel-item {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .carousel-inner .carousel-item .col-6,
+  .carousel-inner .carousel-item .reviews.card {
+      width: 100%;
+  }
+}
+
+/* Additional responsive styles for the newsletter section */
+@media screen and (max-width: 768px) {
+  #newsletter-section .container {
+      text-align: center;
+  }
+
+  #newsletter-section form {
+      max-width: 100%;
+  }
+}

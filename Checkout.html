@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./CSS/Vextek.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <style>
+        .main-container{
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            margin-top: -10px;
+            background-color: black;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            color: white;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+
+        }
+
+        #order-summary {
+            margin-top: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+        td{
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="nav-bar d-flex flex-wrap justify-content-between m-3 mx-5">
+            <div class="nav-logo-split d-flex">
+                <span>
+                    <h2 class="text-white-50">Vex</h2>
+                </span><span>
+                    <h2 class="text-primary">Tech</h2>
+                </span>
+            </div>
+            <div class="nav-content-split w-50">
+                <ul class="list-unstyled d-flex flex-wrap justify-content-around">
+                    <li><a class="nav" href="./Homepage.html">Home</a></li>
+                    <li><a class="nav" href="./Shopping-section.html">Shop</a></li>
+                    <li><a class="nav" href="./Cart.html">Cart</a></li>
+                    <li><a class="nav" href="./About us.html">About Us</a></li>
+                    <li><a class="nav" href="./Contact Us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="checkout d-flex flex-wrap justify-content-around">
+            <form class="w-50 form-control bg-dark bg-gradient border-warning">
+                <h1 class="text-white p-3">Checkout</h1>
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" class="form-check" required>
+
+                <label for="companyName">Company Name:</label>
+                <input type="text" id="companyName" name="companyName" class="form-check">
+
+                <label for="country">Country/Region:</label>
+                <select id="country" name="country" class="form-check" required>
+                    <option value="us">United States</option>
+                    <option value="ca">Canada</option>
+                </select>
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" class="form-check" name="address" required>
+
+                <label for="zipCode">ZIP Code:</label>
+                <input type="text" id="zipCode" name="zipCode" required>
+
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </form>
+
+            <div id="order-summary" class="bg-dark h-75 p-4">
+                <h2 class="text-white">Order Summary</h2>
+                <table class="">
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Quantity</th>
+                            <th>Price per Quantity</th>
+                            <th>Total Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="chk-pname"></td>
+                            <td id="chk-qty"></td>
+                            <td id="chk-ppq">$</td>
+                            <td id="chk-total">$</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>$</td>
+                            <td>$</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>$</td>
+                            <td>$</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="placeorder card bg-dark bg-gradient my-5 rounded-3">
+                    <label for="addn" class="text-center">Any Additional information?</label>
+                    <textarea class="form-check rounded-3" name="addn" cols="30" rows="3"></textarea>
+                    <button type="submit" class="d-grid m-5 p-2 btn btn-outline-primary">Place Order</button>
+                </div>
+            </div>
+        </div>
+        <div id="newsletter">
+            <div class="newsletter mt-3 p-5 bg-dark bg-gradient">
+                <h1 class="pb-3 mb-2 fw-bolder">Join Our Newsletter</h1>
+                <p>Stay up-to-date with our latest products and special offers by subscribing to
+                    our newsletter.</p>
+                <form id="newsletter-form" class="w-100">
+
+                    <input type="email" class="form-check border-top-0 border-start-0 border-end-0 bg-transparent"
+                        id="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary w-25 rounded-pill">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+
+
+</body>
+
+</html>

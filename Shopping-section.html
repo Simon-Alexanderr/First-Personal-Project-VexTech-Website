@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./CSS/Vextek.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="nav-bar d-flex flex-wrap justify-content-between m-3 mx-5">
+            <div class="nav-logo-split d-flex">
+                <span>
+                    <h2 class="text-white-50">Vex</h2>
+                </span><span>
+                    <h2 class="text-primary">Tech</h2>
+                </span>
+            </div>
+            <div class="nav-content-split w-50">
+                <ul class="list-unstyled d-flex flex-wrap justify-content-around">
+                    <li><a class="nav" href="./Homepage.html">Home</a></li>
+                    <li><a class="nav" href="./Shopping-section.html">Shop</a></li>
+                    <li><a class="nav" href="./Cart.html">Cart</a></li>
+                    <li><a class="nav" href="./About us.html">About Us</a></li>
+                    <li><a class="nav" href="./Contact Us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content-container">
+            <h1 class="text-center text-white">All Products</h1>
+            <h2 class="mt-5 ms-5 text-white-50" style="font-family:'Times New Roman', Times, serif; font-weight: 600;">Best Sellers</h2>
+            <p class="text-warning ms-5 font-monospace fs-6 fst-italic">Handpicked by our experts, Loved by our
+                customers</p>
+            <div class="best-sellers row d-flex my-5 px-5">
+                <div class="col-4">
+                    <div class="card-img img-box position-relative">
+                        <img src="./Images/desktop1.jpeg" style="border-radius: 50px;" height="270px" width="350">
+                        <div class="transparent-box">
+                            <div class="caption">
+                                <p>Nubia Ultima </p>
+                                <p class="opacity-low ">Our Best in class Super Powerful Desktop system featuring the
+                                    latest hardware</p>
+                                <span class="d-grid row"><button class="col-3 btn btn-outline-dark w-50 mx-auto" onclick="updateProductInfo(1)">Buy
+                                        Now</button></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer text-white-50"><h6>#1 Nubia NXU4 - 2790$</h6>
+                        <ul>
+                            <li>AMD Ryzen 9 7400X3D</li>
+                            <li>RTX 3090</li>
+                            <li>Corsair Tempest Cooling RGB Fans x 5</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card-img img-box position-relative">
+                        <img src="./Images/desktop2.jpeg" height="270px" width="350px">
+                        <div class="transparent-box">
+                            <div class="caption">
+                                <p>Dex Inferno</p>
+                                <p class="opacity-low ">Another Top of the line with a smaller price tag but no
+                                    compromises</p>
+                                <span class="d-grid row"><button class="col-4 btn btn-outline-dark w-50 mx-auto" onclick="updateProductInfo(2)">Buy
+                                        Now</button></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer text-white-50"><h6>#2 Dex I19R - 1750$</h6>
+                        <ul>
+                            <li>AMD Ryzen 7 7000X3D</li>
+                            <li>RTX 3080Ti</li>
+                            <li>Corsair Tempest Cooling RGB Fans x 5</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card-img img-box position-relative">
+                        <img src="./Images/laptop5a.jpeg" height="250px" width="350px" style="border-radius: 50px;">
+                        <div class="transparent-box">
+                            <div class="caption">
+                                <p>Alienware M17 R4</p>
+                                <p class="opacity-low ">Mobility Power at its fullest....The Most Powerful Gaming Laptop
+                                </p>
+                                <span class="d-grid row"><button class="col-4 btn btn-outline-dark w-50 mx-auto" onclick="updateProductInfo(3)">Buy
+                                        Now</button></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer text-white-50"><h6>#3 Dell Alienware m17 - 1100$</h6>
+                        <ul>
+                            <li>AMD Ryzen 9 6750HX</li>
+                            <li>RTX 3070Ti</li>
+                            <li>165Hz Display</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="best-sellers row d-flex my-5 px-5">
+                <div class="col-4">
+                    <div class="card-img img-box position-relative">
+                        <img src="./Images/laptop3.jpeg" height="250px" width="320px" style="border-radius: 30px;">
+                        <div class="transparent-box">
+                            <div class="caption">
+                                <p>Asus ROG Strix Scar 17</p>
+                                <p class="opacity-low ">Top of the line Gaming Laptop of the Year</p>
+                                <span class="d-grid row"><button class="col-3 btn btn-outline-dark w-50 mx-auto" onclick="updateProductInfo(4)">Buy
+                                        Now</button></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer text-white-50"><h6>#4 Asus ROG Strix Scar 17 - 879$</h6>
+                        <ul>
+                            <li>AMD Ryzen 9 6300HX</li>
+                            <li>RTX 3070Ti</li>
+                            <li>144Hz Display</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card-img img-box position-relative">
+                        <img src="./Images/laptop1.jpeg" height="250px" width="350px" style="border-radius: 50px;">
+                        <div class="transparent-box">
+                            <div class="caption">
+                                <p class="pe-5">Razer Blade Stealth</p>
+                                <p class="opacity-low w-75 ps-4">A true Hybrid between serious power and mobility, The Slimmest
+                                    Gaming and productivity laptop to exist</p>
+                                <span class="d-grid row"><button class="col-4 btn btn-outline-dark w-50 mx-auto" onclick="updateProductInfo(5)">Buy
+                                        Now</button></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer text-white-50"><h6>#5 Razer Blade Stealth 16 - 1379$</h6>
+                        <ul>
+                            <li>AMD Ryzen 7 6400HS</li>
+                            <li>RTX 3060Ti-MaxQ</li>
+                            <li>165Hz 10-Bit Micro-LED Display</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card-img img-box position-relative">
+                        <img src="./Images/desktop3.webp" height="250px" width="399px" style="border-radius: 50px;">
+                        <div class="transparent-box">
+                            <div class="caption">
+                                <p>Legion Tower 5</p>
+                                <p class="opacity-low ">Our Most Affordable Top of the Line Desktop</p>
+                                <span class="d-grid row"><a href="./Product Details.html"><button  class="col-4 btn btn-outline-dark w-50 mx-auto" onclick="updateProductInfo(6)">Buy
+                                        Now</button></a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer text-white-50"><h6>#6 Lenovo Legion Tower - 799$</h6>
+                        <ul>
+                            <li>AMD Ryzen 7 5800</li>
+                            <li>RTX 3060Ti</li>
+                            <li>Corsair RGB Cooling Fans x 6</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+            <div id="newsletter">
+                <div class="newsletter mt-3 p-5 bg-dark bg-gradient">
+                    <h1 class="pb-3 mb-2 fw-bolder">Join Our Newsletter</h1>
+                    <p>Stay up-to-date with our latest products and special offers by subscribing to
+                        our newsletter.</p>
+                    <form id="newsletter-form" class="w-100">
+        
+                            <input type="email"
+                                class="form-control border-top-0 border-start-0 border-end-0 bg-transparent"
+                                id="email" placeholder="Enter your email" required>
+                                <button type="submit" class="btn btn-primary w-25 rounded-pill">Subscribe</button>      
+                    </form>
+                </div>
+                </div>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
